@@ -5,6 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
+import Box from "@material-ui/core/Box";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,18 +17,19 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-  customizeToolbar: {
-    minHeight: 52,
-  },
+  // customizeToolbar: {
+  //   minHeight: 52,
+  // },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
+    // minHeight: 52,
   },
 }));
 
 export const Header = () => {
   const classes = useStyles();
   return (
-    <React.Fragment>
+    <Box component="nav">
       <AppBar
         position="absolute"
         style={{ background: "white" }}
@@ -57,13 +59,13 @@ export const Header = () => {
             <Grid item>
               <Button color="primary">Contact Me</Button>
             </Grid>
-            <Grid item>
+            {/* <Grid item>
               <Button color="primary">Resume</Button>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Toolbar>
       </AppBar>
       <Toolbar />
-    </React.Fragment>
+    </Box>
   );
 };
