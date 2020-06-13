@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
   customizeToolbar: {
     minHeight: 52,
   },
+  appBar: {
+    zIndex: theme.zIndex.drawer + 1,
+  },
 }));
 
 export const Header = () => {
@@ -27,7 +30,7 @@ export const Header = () => {
     <React.Fragment>
       <AppBar
         position="absolute"
-        style={{ background: "transparent" }}
+        style={{ background: "white" }}
         className={classes.appBar}
       >
         >
