@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: "12rem",
-    // backgroundColor: "black", // can switch background color of left navbar here
   },
   content: {
     flexGrow: 1,
@@ -32,6 +31,11 @@ const useStyles = makeStyles((theme) => ({
   dividerRoot: {
     height: "9rem",
     backgroundColor: `${darkPink}`,
+  },
+  rotate: {
+    transform: "translateX(-50%) translateY(-50%) rotate(90deg)",
+    position: "absolute",
+    top: "68%",
   },
 }));
 
@@ -98,11 +102,40 @@ export const Body = () => {
         </Drawer>
       </Box>
       <Box component="right-sidebar">
-        <Drawer className={classes.drawer} variant="permanent" anchor="right">
+        <Drawer
+          className={classes.drawer}
+          variant="permanent"
+          classes={{
+            paper: classes.drawerPaper,
+          }}
+          anchor="right"
+        >
           <Toolbar />
-          <div className={classes.drawerContainer}>
-            <MailIcon />
-          </div>
+          <Grid
+            style={{ height: "100%" }}
+            container
+            direction="column"
+            justify="flex-end"
+            alignItems="center"
+            spacing={3}
+          >
+            <Grid item>
+              <a href="mailto:lliang9838@gmail.com">
+                <Typography className={classes.rotate} color="primary">
+                  lliang9838@gmail.com
+                </Typography>
+              </a>
+            </Grid>
+            <Grid item>
+              <Divider
+                classes={{
+                  root: classes.dividerRoot,
+                }}
+                orientation="vertical"
+                flexItem
+              />
+            </Grid>
+          </Grid>
         </Drawer>
       </Box>
     </Box>

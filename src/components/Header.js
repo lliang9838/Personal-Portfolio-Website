@@ -35,7 +35,6 @@ export const Header = () => {
         style={{ background: "white" }}
         className={classes.appBar}
       >
-        >
         <Toolbar className={classes.customizeToolbar}>
           <Grid
             container
@@ -59,9 +58,9 @@ export const Header = () => {
             <Grid item>
               <Button color="primary">Contact Me</Button>
             </Grid>
-            {/* <Grid item>
+            <Grid item>
               <Button color="primary">Resume</Button>
-            </Grid> */}
+            </Grid>
           </Grid>
         </Toolbar>
       </AppBar>
