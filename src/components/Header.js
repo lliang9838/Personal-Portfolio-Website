@@ -17,12 +17,8 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-  // customizeToolbar: {
-  //   minHeight: 52,
-  // },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
-    // minHeight: 52,
   },
 }));
 

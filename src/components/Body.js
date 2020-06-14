@@ -18,15 +18,15 @@ const darkPink = pink[600];
 const drawerWidth = 24;
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    display: "flex",
+  },
   drawer: {
     flexShrink: 0,
+    width: "12rem",
   },
   drawerPaper: {
     width: "12rem",
-  },
-  content: {
-    flexGrow: 1,
-    padding: theme.spacing(3),
   },
   dividerRoot: {
     height: "9rem",
@@ -37,12 +37,18 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     top: "68%",
   },
+  // necessary for content to be below app bar
+  toolbar: theme.mixins.toolbar,
+  content: {
+    flexGrow: 1,
+    padding: theme.spacing(3),
+  },
 }));
 
 export const Body = () => {
   const classes = useStyles();
   return (
-    <Box component="content">
+    <Box component="content" className={classes.root}>
       <Box component="left-sidebar">
         <Drawer
           className={classes.drawer}
@@ -101,6 +107,24 @@ export const Body = () => {
           </Grid>
         </Drawer>
       </Box>
+      <main className={classes.content}>
+        <div className={classes.toolbar} />
+        <Typography paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
+          dolor purus non enim praesent elementum facilisis leo vel. Risus at
+          ultrices mi tempus imperdiet. Semper risus in hendrerit gravida rutrum
+          quisque non tellus. Convallis convallis tellus id interdum velit
+          laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed
+          adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies
+          integer quis. Cursus euismod quis viverra nibh cras. Metus vulputate
+          eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo
+          quis imperdiet massa tincidunt. Cras tincidunt lobortis feugiat
+          vivamus at augue. At augue eget arcu dictum varius duis at consectetur
+          lorem. Velit sed ullamcorper morbi tincidunt. Lorem donec massa sapien
+          faucibus et molestie ac.
+        </Typography>
+      </main>
       <Box component="right-sidebar">
         <Drawer
           className={classes.drawer}
