@@ -2,6 +2,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 import pink from "@material-ui/core/colors/pink";
 
 const darkPink = pink[600];
+const darkestPink = pink[800];
 
 const theme = createMuiTheme({
   typography: {
@@ -11,6 +12,9 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: darkPink,
+    },
+    secondary: {
+      main: darkestPink,
     },
   },
 });
