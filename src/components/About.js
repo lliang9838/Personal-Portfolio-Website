@@ -179,7 +179,7 @@ export const About = () => {
               >
                 <ChevronRightRoundedIcon color="primary" />
               </ListItemIcon>
-              <ListItemText primary="HTML & (S)CSS & SASS" />
+              <ListItemText primary="HTML & (S)CSS" />
             </ListItem>
             <ListItem
               classes={{
