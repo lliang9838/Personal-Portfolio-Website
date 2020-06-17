@@ -16,6 +16,9 @@ const darkerPink = pink[700];
 const darkestPink = pink[800];
 
 const useStyles = makeStyles((theme) => ({
+  content: {
+    padding: theme.spacing(3),
+  },
   divider: {
     height: ".2rem",
     backgroundColor: `${darkestPink}`,
@@ -27,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
     overflow: "hidden",
   },
   gridList: {
-    marginTop: "3rem !important",
-    width: "95%",
+    marginTop: "4rem !important",
+    width: "100%",
     height: "60rem",
   },
   smoothCorners: {
@@ -39,14 +42,14 @@ const useStyles = makeStyles((theme) => ({
 export const Projects = () => {
   const classes = useStyles();
   return (
-    <div style={{ paddingBottom: "25rem" }} className={classes.root}>
+    <div style={{ paddingBottom: "25rem" }} className={classes.content}>
       <div style={{ display: "flex" }}>
         <Typography
           style={{ fontFamily: "Noto Sans TC" }}
           color="secondary"
           variant="h3"
         >
-          Work Experience
+          Notable Projects
         </Typography>
         <Divider
           classes={{
@@ -59,75 +62,77 @@ export const Projects = () => {
           }}
         />
       </div>
-      <GridList cellHeight="280" className={classes.gridList} cols={3}>
-        <GridListTile
-          classes={{ tile: classes.smoothCorners }}
-          key="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
-        >
-          {/* <a href="https://github.com/lliang9838" target="_blank"> */}
-          <img
-            src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
-            alt="temp"
-          />
-          {/* </a> */}
-          <GridListTileBar
-            title="Blogging Web App"
-            subtitle="Angular, MongoDB, Express, Node"
-          />
-        </GridListTile>
-        <GridListTile
-          classes={{ tile: classes.smoothCorners }}
-          key="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
-            alt="temp"
-          />
-          <GridListTileBar
-            title="Blogging Web App"
-            subtitle="Angular, MongoDB, Express, Node"
-          />
-        </GridListTile>
-        <GridListTile
-          classes={{ tile: classes.smoothCorners }}
-          key="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
-            alt="temp"
-          />
-          <GridListTileBar
-            title="Blogging Web App"
-            subtitle="Angular, MongoDB, Express, Node"
-          />
-        </GridListTile>
-        <GridListTile
-          classes={{ tile: classes.smoothCorners }}
-          key="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
-            alt="temp"
-          />
-          <GridListTileBar
-            title="Blogging Web App"
-            subtitle="Angular, MongoDB, Express, Node"
-          />
-        </GridListTile>
-        <GridListTile
-          classes={{ tile: classes.smoothCorners }}
-          key="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
-            alt="temp"
-          />
-          <GridListTileBar
-            title="Blogging Web App"
-            subtitle="Angular, MongoDB, Express, Node"
-          />
-        </GridListTile>
-      </GridList>
+      <div className={classes.root}>
+        <GridList cellHeight="280" className={classes.gridList} cols={3}>
+          <GridListTile
+            classes={{ tile: classes.smoothCorners }}
+            key="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
+          >
+            {/* <a href="https://github.com/lliang9838" target="_blank"> */}
+            <img
+              src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
+              alt="temp"
+            />
+            {/* </a> */}
+            <GridListTileBar
+              title="Blogging Web App"
+              subtitle="Angular, MongoDB, Express, Node"
+            />
+          </GridListTile>
+          <GridListTile
+            classes={{ tile: classes.smoothCorners }}
+            key="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
+              alt="temp"
+            />
+            <GridListTileBar
+              title="Blogging Web App"
+              subtitle="Angular, MongoDB, Express, Node"
+            />
+          </GridListTile>
+          <GridListTile
+            classes={{ tile: classes.smoothCorners }}
+            key="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
+              alt="temp"
+            />
+            <GridListTileBar
+              title="Blogging Web App"
+              subtitle="Angular, MongoDB, Express, Node"
+            />
+          </GridListTile>
+          <GridListTile
+            classes={{ tile: classes.smoothCorners }}
+            key="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
+              alt="temp"
+            />
+            <GridListTileBar
+              title="Blogging Web App"
+              subtitle="Angular, MongoDB, Express, Node"
+            />
+          </GridListTile>
+          <GridListTile
+            classes={{ tile: classes.smoothCorners }}
+            key="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
+              alt="temp"
+            />
+            <GridListTileBar
+              title="Blogging Web App"
+              subtitle="Angular, MongoDB, Express, Node"
+            />
+          </GridListTile>
+        </GridList>
+      </div>
     </div>
   );
 };
