@@ -14,6 +14,8 @@ import pink from "@material-ui/core/colors/pink";
 import Divider from "@material-ui/core/Divider";
 import { Introduction } from "./Introduction";
 import { About } from "./About";
+import { Experience } from "./Experience";
+import { Projects } from "./Projects";
 
 const darkPink = pink[600];
 const darkerPink = pink[700];
@@ -113,6 +115,8 @@ export const Body = () => {
       <main>
         <Introduction />
         <About />
+        <Experience />
+        <Projects />
       </main>
       <Drawer
         className={classes.drawer}

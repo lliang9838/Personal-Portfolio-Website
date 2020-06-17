@@ -17,7 +17,6 @@ const darkestPink = pink[800];
 
 const useStyles = makeStyles((theme) => ({
   content: {
-    flexGrow: 1,
     padding: theme.spacing(3),
   },
   divider: {
@@ -32,8 +31,6 @@ const useStyles = makeStyles((theme) => ({
   },
   avatarBackground: {
     alignSelf: "center",
-    // width: "30rem", // width used to be 30
-    // height: "30rem",
     borderRadius: "50%",
     backgroundColor: `${myPink}`,
     overflow: "hidden",
@@ -96,8 +93,8 @@ export const About = () => {
           modern tech stack (Angular, Express, Node, MongoDB), I found myself
           enamored with the web ecosystem. On one side, I could create aesthetic
           features to attract users to the website (front-end) and on the other,
-          I could write efficient algorithms to process and manipulate and our
-          data (backend-end).
+          I could write efficient algorithms to process and manipulate our data
+          (backend-end).
           <br />
           <br />I graduated in June 2019 with a Bachelor's in Computer Science
           from <span className={classes.robotoBold}>UCLA</span> and I have been
@@ -109,7 +106,7 @@ export const About = () => {
           impactful work.
           <br />
           <br />
-          Here are a languages and technologies that I am fairly familiar with:
+          Here are some technologies that I am fairly familiar with:
         </Typography>
         <div style={{ width: "51rem" }}>
           <List
