@@ -69,14 +69,14 @@ export const Body = () => {
             direction="column"
             justify="flex-end"
             alignItems="center"
-            spacing={3}
+            // spacing={3}
           >
-            <Grid item>
+            <Grid item style={{ marginBottom: "1.2rem", marginTop: "1.2rem" }}>
               <a href="https://github.com/lliang9838" target="_blank">
                 <GitHubIcon color="primary" />
               </a>
             </Grid>
-            <Grid item>
+            <Grid item style={{ marginBottom: "1.2rem", marginTop: "1.2rem" }}>
               <a
                 href="https://www.linkedin.com/in/leslieliang9838/"
                 target="_blank"
@@ -84,7 +84,7 @@ export const Body = () => {
                 <LinkedInIcon color="primary" />
               </a>
             </Grid>
-            <Grid item>
+            <Grid item style={{ marginBottom: "1.2rem", marginTop: "1.2rem" }}>
               <a
                 href="https://www.facebook.com/bigballerleslie/"
                 target="_blank"
@@ -92,7 +92,7 @@ export const Body = () => {
                 <FacebookIcon color="primary" />
               </a>
             </Grid>
-            <Grid item>
+            <Grid item style={{ marginBottom: "1.2rem", marginTop: "1.2rem" }}>
               <a
                 href="https://www.instagram.com/bigballerleslie/"
                 target="_blank"
@@ -133,9 +133,8 @@ export const Body = () => {
           direction="column"
           justify="flex-end"
           alignItems="center"
-          spacing={3}
         >
-          <Grid item>
+          <Grid item style={{ marginBottom: "1.2rem", marginTop: "1.2rem" }}>
             <a href="mailto:lliang9838@gmail.com">
               <Typography
                 style={{ fontFamily: "'Roboto Mono'" }}
