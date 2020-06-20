@@ -34,7 +34,11 @@ const useStyles = makeStyles((theme) => ({
 export const Projects = () => {
   const classes = useStyles();
   return (
-    <div style={{ paddingBottom: "25rem" }} className={classes.content}>
+    <div
+      id="projects"
+      style={{ paddingBottom: "25rem" }}
+      className={classes.content}
+    >
       <div style={{ display: "flex" }}>
         <Typography
           style={{ fontFamily: "Noto Sans TC" }}

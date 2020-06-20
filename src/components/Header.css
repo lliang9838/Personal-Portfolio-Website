@@ -1,8 +1,8 @@
-a {
+.nav-link {
   text-decoration: none;
+  border-bottom: 0.25rem solid transparent;
 }
 
-a:hover {
-  /* border-bottom: 1rem solid; */
-  font-size: 80px;
+.nav-link:hover {
+  border-bottom: 0.25rem solid #d81b60;
 }

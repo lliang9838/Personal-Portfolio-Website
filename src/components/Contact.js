@@ -27,7 +27,11 @@ const useStyles = makeStyles((theme) => ({
 export const Contact = () => {
   const classes = useStyles();
   return (
-    <div style={{ paddingBottom: "25rem" }} className={classes.content}>
+    <div
+      id="contact"
+      style={{ paddingBottom: "25rem" }}
+      className={classes.content}
+    >
       <div>
         <div style={{ display: "flex" }}>
           <Typography

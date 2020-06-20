@@ -35,42 +35,48 @@ export const Header = () => {
         className={classes.appBar}
       >
         <Toolbar>
-          <Grid
-            container
-            spacing={5}
-            direction="row"
-            justify="flex-end"
-            alignItems="center"
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              width: "100%",
+            }}
           >
-            <Grid item style={{ marginRight: "auto" }}>
-              <Button color="primary">Logo</Button>
-            </Grid>
-            <Grid item>
-              <a href="#about" className="nav-link">
-                <Typography color="primary">About</Typography>
-              </a>
-            </Grid>
-            <Grid item>
-              <a href="#experience">
-                <Typography color="primary">Experience</Typography>
-              </a>
-            </Grid>
-            <Grid item>
-              <a href="#projects">
-                <Typography color="primary">Projects</Typography>
-              </a>
-            </Grid>
-            <Grid item>
-              <a href="#contact">
-                <Typography color="primary">Contact Me</Typography>
-              </a>
-            </Grid>
-            <Grid item>
-              <a href={Resume} target="_blank">
-                <Typography color="primary">Resume</Typography>
-              </a>
-            </Grid>
-          </Grid>
+            <a href="#" style={{ marginRight: "auto", textDecoration: "none" }}>
+              <Typography color="primary">Logo</Typography>
+            </a>
+            <a
+              href="#about"
+              className="nav-link"
+              style={{ marginRight: "3rem" }}
+            >
+              <Typography color="primary">About</Typography>
+            </a>
+            <a
+              href="#experience"
+              className="nav-link"
+              style={{ marginRight: "3rem" }}
+            >
+              <Typography color="primary">Experience</Typography>
+            </a>
+            <a
+              href="#projects"
+              className="nav-link"
+              style={{ marginRight: "3rem" }}
+            >
+              <Typography color="primary">Projects</Typography>
+            </a>
+            <a
+              href="#contact"
+              className="nav-link"
+              style={{ marginRight: "3rem" }}
+            >
+              <Typography color="primary">Contact Me</Typography>
+            </a>
+            <a href={Resume} className="nav-link" target="_blank">
+              <Typography color="primary">Resume</Typography>
+            </a>
+          </div>
         </Toolbar>
       </AppBar>
       {/* <Toolbar /> */}
