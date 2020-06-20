@@ -16,6 +16,7 @@ import { Introduction } from "./Introduction";
 import { About } from "./About";
 import { Experience } from "./Experience";
 import { Projects } from "./Projects";
+import { Contact } from "./Contact";
 
 const darkPink = pink[600];
 const darkerPink = pink[700];
@@ -44,9 +45,6 @@ const useStyles = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing(3),
-  },
-  h2Color: {
-    color: `${darkerPink}`,
   },
 }));
 
@@ -117,6 +115,7 @@ export const Body = () => {
         <About />
         <Experience />
         <Projects />
+        <Contact />
       </main>
       <Drawer
         className={classes.drawer}
