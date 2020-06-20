@@ -19,7 +19,10 @@ const useStyles = makeStyles((theme) => ({
 export const Introduction = () => {
   const classes = useStyles();
   return (
-    <div style={{ paddingBottom: "25rem" }} className={classes.content}>
+    <div
+      style={{ paddingTop: "8.5rem", paddingBottom: "25rem" }}
+      className={classes.content}
+    >
       <div className={classes.toolbar} />
       <Typography color="primary" variant="overline" display="block">
         Hi, my name is

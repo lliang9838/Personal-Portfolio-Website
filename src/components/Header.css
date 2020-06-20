@@ -1,0 +1,8 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  /* border-bottom: 1rem solid; */
+  font-size: 80px;
+}

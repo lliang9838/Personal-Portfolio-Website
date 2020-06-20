@@ -6,6 +6,9 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
+import Resume from "../img/resume.pdf";
+
+import "./Header.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,10 +34,10 @@ export const Header = () => {
         style={{ background: "white" }}
         className={classes.appBar}
       >
-        <Toolbar className={classes.customizeToolbar}>
+        <Toolbar>
           <Grid
             container
-            spacing={3}
+            spacing={5}
             direction="row"
             justify="flex-end"
             alignItems="center"
@@ -43,24 +46,34 @@ export const Header = () => {
               <Button color="primary">Logo</Button>
             </Grid>
             <Grid item>
-              <Button color="primary">About</Button>
+              <a href="#about" className="nav-link">
+                <Typography color="primary">About</Typography>
+              </a>
             </Grid>
             <Grid item>
-              <Button color="primary">Experience</Button>
+              <a href="#experience">
+                <Typography color="primary">Experience</Typography>
+              </a>
             </Grid>
             <Grid item>
-              <Button color="primary">Projects</Button>
+              <a href="#projects">
+                <Typography color="primary">Projects</Typography>
+              </a>
             </Grid>
             <Grid item>
-              <Button color="primary">Contact Me</Button>
+              <a href="#contact">
+                <Typography color="primary">Contact Me</Typography>
+              </a>
             </Grid>
             <Grid item>
-              <Button color="primary">Resume</Button>
+              <a href={Resume} target="_blank">
+                <Typography color="primary">Resume</Typography>
+              </a>
             </Grid>
           </Grid>
         </Toolbar>
       </AppBar>
-      <Toolbar />
+      {/* <Toolbar /> */}
     </Box>
   );
 };
