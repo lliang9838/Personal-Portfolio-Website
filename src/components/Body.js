@@ -111,12 +111,12 @@ export const Body = () => {
           </Grid>
         </Drawer>
       </div>
-      <main>
+      <main style={{ width: "120rem" }}>
         <Introduction />
         <About />
         <Experience />
         <Projects />
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <div className="sidebar">
         <Drawer

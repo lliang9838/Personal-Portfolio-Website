@@ -191,8 +191,9 @@ export const Projects = () => {
               >
                 My own personal website coded from scratch. You're looking at it
                 now! It's responsive, creative and informative. I picked the
-                color scheme myself to make it look appealing. It also has a
-                theme toggler that switches between light and dark mode.
+                color scheme myself to make it look appealing. Applied concepts
+                such as React Hooks, Material UI themes, Flexbox and media
+                queries to create this masterpiece.
               </Typography>
               <div
                 style={{

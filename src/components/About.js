@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   content: {
     padding: theme.spacing(3),
     paddingBottom: "25rem",
-    width: "95rem",
+    width: "95%",
   },
   divider: {
     height: ".2rem",
@@ -59,7 +59,6 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const mediumScreen = useMediaQuery("(max-width: 56.25em)");
-  console.log("matches in about: ", mediumScreen);
   return (
     <div id="about" className={classes.content}>
       <div style={{ display: "flex" }}>
@@ -101,14 +100,14 @@ export const About = () => {
             on the other, I could write efficient algorithms to process and
             manipulate our data (backend-end).
             <br />
-            <br />I graduated in June 2019 with a Bachelor's in Computer Science
-            from <span className={classes.robotoBold}>UCLA</span> and I have
-            been working at{" "}
+            <br />I graduated in June 2019 with a Bachelor of Science in
+            Computer Science from{" "}
+            <span className={classes.robotoBold}>UCLA</span> and I have been
+            working at{" "}
             <span className={classes.robotoBold}>Northrop Grumman</span> ever
             since. I am humbled and blessed to be able to work for such a
-            fantastic organization where we tackle meaningful and appealing
-            problems related to national security. I feel like I am doing
-            impactful work.
+            fantastic organization where we tackle meaningful problems related
+            to national security. I feel like I am doing impactful work.
             <br />
             <br />
             Here are some technologies that I am fairly familiar with:
