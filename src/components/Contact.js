@@ -4,6 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import pink from "@material-ui/core/colors/pink";
 import Divider from "@material-ui/core/Divider";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const darkerPink = pink[700];
 const darkestPink = pink[800];
@@ -26,10 +27,15 @@ const useStyles = makeStyles((theme) => ({
 
 export const Contact = () => {
   const classes = useStyles();
+  const smallScreen = useMediaQuery("(max-width: 37.5em)");
+
   return (
     <div
       id="contact"
-      style={{ paddingBottom: "25rem" }}
+      style={{
+        paddingBottom: "25rem",
+        alignItems: smallScreen ? "flex-start" : "center",
+      }}
       className={classes.content}
     >
       <div>

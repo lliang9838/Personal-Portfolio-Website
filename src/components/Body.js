@@ -116,7 +116,7 @@ export const Body = () => {
         <About />
         <Experience />
         <Projects />
-        {/* <Contact /> */}
+        <Contact />
       </main>
       <div className="sidebar">
         <Drawer

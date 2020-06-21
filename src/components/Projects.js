@@ -39,7 +39,11 @@ export const Projects = () => {
   return (
     <div
       id="projects"
-      style={{ paddingBottom: "25rem" }}
+      style={{
+        paddingBottom: "25rem",
+        display: "flex",
+        flexDirection: "column",
+      }}
       className={classes.content}
     >
       <div style={{ display: "flex" }}>
@@ -62,10 +66,14 @@ export const Projects = () => {
         />
       </div>
       {/* FIRST PROJECT, BLOGGING WEB APP */}
-      <div className={classes.root} style={{ marginTop: "4rem" }}>
+      <div
+        className={classes.root}
+        // for other projects, this marginTop does not need to be 4rem, can be 2rem
+        style={{ marginTop: "4rem", height: "100%" }}
+      >
         <div
           style={{
-            height: "35rem",
+            height: "100%",
             display: "flex",
             flexDirection: smallScreen ? "column" : "row",
           }}
@@ -168,102 +176,113 @@ export const Projects = () => {
             </div>
           </div>
         </div>
-        {/* SECOND PROJECT, PORTFOLIO WEBSITE */}
-        {/* <div className={classes.root} style={{ marginTop: "2rem" }}>
+      </div>
+      {/* SECOND PROJECT, PORTFOLIO WEBSITE */}
+      <div
+        className={classes.root}
+        style={{ marginTop: "2rem", height: "100%" }}
+      >
+        <div
+          style={{
+            height: "100%",
+            display: "flex",
+            flexDirection: smallScreen ? "column-reverse" : "row",
+          }}
+        >
           <div
             style={{
-              height: "35rem",
               display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-end",
+              width: smallScreen ? "80%" : "50%",
+              marginLeft: smallScreen ? "0rem" : "2rem",
+              marginTop: smallScreen ? "2rem" : "0rem",
             }}
           >
+            <Typography
+              variant="h4"
+              color="secondary"
+              style={{ fontWeight: 700 }}
+            >
+              My Portfolio Website
+            </Typography>
+            <Typography
+              style={{ marginTop: "1rem" }}
+              color="primary"
+              variant="body1"
+            >
+              My own personal website coded from scratch. You're looking at it
+              now! It's responsive, creative and informative. I picked the color
+              scheme myself to make it look appealing. Applied concepts such as
+              React Hooks, Material UI themes, Flexbox and media queries to
+              create this masterpiece.
+            </Typography>
             <div
               style={{
+                marginTop: "1rem",
                 display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-end",
+                width: "80%",
+                justifyContent: "space-evenly",
               }}
             >
               <Typography
-                variant="h4"
-                color="secondary"
-                style={{ fontWeight: 700 }}
+                style={{ color: `${darkerPink}` }}
+                variant="subtitle1"
               >
-                My Portfolio Website
+                React
               </Typography>
               <Typography
-                style={{ marginTop: "1rem" }}
-                color="primary"
-                variant="body1"
+                style={{ color: `${darkerPink}` }}
+                variant="subtitle1"
               >
-                My own personal website coded from scratch. You're looking at it
-                now! It's responsive, creative and informative. I picked the
-                color scheme myself to make it look appealing. Applied concepts
-                such as React Hooks, Material UI themes, Flexbox and media
-                queries to create this masterpiece.
+                Material UI
               </Typography>
-              <div
-                style={{
-                  marginTop: "1rem",
-                  display: "flex",
-                  width: "80%",
-                  justifyContent: "space-evenly",
+              <Typography
+                style={{ color: `${darkerPink}` }}
+                variant="subtitle1"
+              >
+                Flexbox
+              </Typography>
+              <Typography
+                style={{ color: `${darkerPink}` }}
+                variant="subtitle1"
+              >
+                HTML
+              </Typography>
+              <Typography
+                style={{ color: `${darkerPink}` }}
+                variant="subtitle1"
+              >
+                CSS
+              </Typography>
+            </div>
+            <div style={{ display: "flex" }}>
+              <IconButton
+                onClick={() => {
+                  console.log("github");
                 }}
               >
-                <Typography
-                  style={{ color: `${darkerPink}` }}
-                  variant="subtitle1"
-                >
-                  React
-                </Typography>
-                <Typography
-                  style={{ color: `${darkerPink}` }}
-                  variant="subtitle1"
-                >
-                  Material UI
-                </Typography>
-                <Typography
-                  style={{ color: `${darkerPink}` }}
-                  variant="subtitle1"
-                >
-                  Flexbox
-                </Typography>
-                <Typography
-                  style={{ color: `${darkerPink}` }}
-                  variant="subtitle1"
-                >
-                  HTML
-                </Typography>
-                <Typography
-                  style={{ color: `${darkerPink}` }}
-                  variant="subtitle1"
-                >
-                  CSS
-                </Typography>
-              </div>
-              <div style={{ display: "flex" }}>
-                <IconButton
-                  onClick={() => {
-                    console.log("github");
-                  }}
-                >
-                  <GitHubIcon color="primary" />
-                </IconButton>
-                <IconButton
-                  onClick={() => {
-                    console.log("link");
-                  }}
-                >
-                  <LinkIcon style={{ fontSize: "3.3rem" }} color="primary" />
-                </IconButton>
-              </div>
+                <GitHubIcon color="primary" />
+              </IconButton>
+              <IconButton
+                onClick={() => {
+                  console.log("link");
+                }}
+              >
+                <LinkIcon style={{ fontSize: "3.3rem" }} color="primary" />
+              </IconButton>
             </div>
-            <img
-              style={{ marginLeft: "2rem", borderRadius: "1%" }}
-              className={classes.imgStyle}
-              src="https://images.unsplash.com/photo-1583532452513-a02186582ccd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-            />
           </div>
-        </div> */}
+          <img
+            style={{
+              borderRadius: "1%",
+              width: smallScreen ? "80%" : "50%",
+              marginLeft: smallScreen ? "0rem" : "2rem",
+            }}
+            className={classes.imgStyle}
+            src="https://images.unsplash.com/photo-1583532452513-a02186582ccd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+          />
+        </div>
       </div>
     </div>
   );
