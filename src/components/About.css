@@ -5,3 +5,14 @@ img {
 img:hover {
   opacity: 1;
 }
+
+.inner-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .inner-content {
+    flex-direction: column-reverse;
+  }
+}
