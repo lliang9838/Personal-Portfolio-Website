@@ -6,3 +6,24 @@
 .nav-link:hover {
   border-bottom: 0.25rem solid #d81b60;
 }
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  /* display: none; */
+}
+
+.hamburger {
+  margin-left: auto;
+  display: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .navbar {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
