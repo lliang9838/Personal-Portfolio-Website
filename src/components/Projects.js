@@ -6,6 +6,7 @@ import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@material-ui/icons/Link";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const darkPink = pink[600];
 const darkerPink = pink[700];
@@ -33,6 +34,8 @@ const useStyles = makeStyles((theme) => ({
 
 export const Projects = () => {
   const classes = useStyles();
+  const smallScreen = useMediaQuery("(max-width: 37.5em)");
+  const mediumScreen = useMediaQuery("(max-width: 56.25em)");
   return (
     <div
       id="projects"
@@ -64,19 +67,22 @@ export const Projects = () => {
           style={{
             height: "35rem",
             display: "flex",
+            flexDirection: smallScreen ? "column" : "row",
           }}
         >
           <img
-            style={{ borderRadius: "1%" }}
+            style={{ borderRadius: "1%", width: smallScreen ? "80%" : "50%" }}
             className={classes.imgStyle}
             src="https://images.unsplash.com/photo-1583532452513-a02186582ccd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
           />
           <div
             style={{
-              marginLeft: "2rem",
+              marginLeft: smallScreen ? "0rem" : "2rem",
+              marginTop: smallScreen ? "2rem" : "0rem",
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-end",
+              width: smallScreen ? "80%" : "50%",
             }}
           >
             <Typography
@@ -163,7 +169,7 @@ export const Projects = () => {
           </div>
         </div>
         {/* SECOND PROJECT, PORTFOLIO WEBSITE */}
-        <div className={classes.root} style={{ marginTop: "2rem" }}>
+        {/* <div className={classes.root} style={{ marginTop: "2rem" }}>
           <div
             style={{
               height: "35rem",
@@ -257,7 +263,7 @@ export const Projects = () => {
               src="https://images.unsplash.com/photo-1583532452513-a02186582ccd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
