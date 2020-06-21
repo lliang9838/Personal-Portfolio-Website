@@ -17,6 +17,7 @@ import { About } from "./About";
 import { Experience } from "./Experience";
 import { Projects } from "./Projects";
 import { Contact } from "./Contact";
+import "./Body.css";
 
 const darkPink = pink[600];
 const darkerPink = pink[700];
@@ -52,7 +53,7 @@ export const Body = () => {
   const classes = useStyles();
   return (
     <Box component="content" className={classes.root}>
-      <Box component="left-sidebar">
+      <div className="sidebar">
         <Drawer
           className={classes.drawer}
           variant="permanent"
@@ -109,7 +110,7 @@ export const Body = () => {
             </Grid>
           </Grid>
         </Drawer>
-      </Box>
+      </div>
       <main>
         <Introduction />
         <About />
@@ -117,44 +118,46 @@ export const Body = () => {
         <Projects />
         <Contact />
       </main>
-      <Drawer
-        className={classes.drawer}
-        variant="permanent"
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-        anchor="right"
-      >
-        <Toolbar />
-        <Grid
-          style={{ height: "100%" }}
-          container
-          direction="column"
-          justify="flex-end"
-          alignItems="center"
+      <div className="sidebar">
+        <Drawer
+          className={classes.drawer}
+          variant="permanent"
+          classes={{
+            paper: classes.drawerPaper,
+          }}
+          anchor="right"
         >
-          <Grid item style={{ marginBottom: "1.2rem", marginTop: "1.2rem" }}>
-            <a href="mailto:lliang9838@gmail.com">
-              <Typography
-                style={{ fontFamily: "'Roboto Mono'" }}
-                className={classes.rotate}
-                color="primary"
-              >
-                lliang9838@gmail.com
-              </Typography>
-            </a>
+          <Toolbar />
+          <Grid
+            style={{ height: "100%" }}
+            container
+            direction="column"
+            justify="flex-end"
+            alignItems="center"
+          >
+            <Grid item style={{ marginBottom: "1.2rem", marginTop: "1.2rem" }}>
+              <a href="mailto:lliang9838@gmail.com">
+                <Typography
+                  style={{ fontFamily: "'Roboto Mono'" }}
+                  className={classes.rotate}
+                  color="primary"
+                >
+                  lliang9838@gmail.com
+                </Typography>
+              </a>
+            </Grid>
+            <Grid item>
+              <Divider
+                classes={{
+                  root: classes.divider,
+                }}
+                orientation="vertical"
+                flexItem
+              />
+            </Grid>
           </Grid>
-          <Grid item>
-            <Divider
-              classes={{
-                root: classes.divider,
-              }}
-              orientation="vertical"
-              flexItem
-            />
-          </Grid>
-        </Grid>
-      </Drawer>
+        </Drawer>
+      </div>
     </Box>
   );
 };
