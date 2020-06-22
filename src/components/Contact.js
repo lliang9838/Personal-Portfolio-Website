@@ -66,9 +66,9 @@ export const Contact = () => {
       >
         If you reached all the way here, I just wanted to thank you for taking
         your time to peruse through my website. It wasn't easy coding it up but
-        I got to learn a lot of cool tricks and it was a lot of fun. I love
-        meeting new people and networking so you can feel free to contact me at
-        any time.{" "}
+        I got to learn a lot of cool tricks and it feels so rewarding. I love
+        expanding my network and meeting new people so you can feel free to
+        contact me at any time.{" "}
         <span className={classes.robotoBold}>
           I am more than happy to share my experiences as a first-generation
           student with a low gpa who was able to graduate from UCLA in four
