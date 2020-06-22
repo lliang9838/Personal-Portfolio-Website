@@ -52,7 +52,7 @@ export const Header = () => {
     <Box component="nav">
       <AppBar
         position="absolute"
-        style={{ background: "white", width: "120rem" }}
+        style={{ background: "white" }}
         className={classes.appBar}
       >
         <Toolbar>
