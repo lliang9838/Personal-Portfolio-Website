@@ -66,7 +66,7 @@ export const Experience = () => {
     <div
       id="experience"
       style={{
-        paddingBottom: "25rem",
+        paddingBottom: smallScreen ? "10rem" : "25rem",
       }}
       className={classes.content}
     >
@@ -84,7 +84,8 @@ export const Experience = () => {
           }}
           style={{
             marginLeft: "1.5rem",
-            width: "29rem",
+            width: smallScreen ? "24rem" : "29rem",
+            height: smallScreen ? ".25rem" : ".2rem",
             alignSelf: "center",
           }}
         />

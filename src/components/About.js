@@ -19,8 +19,7 @@ const darkestPink = pink[800];
 const useStyles = makeStyles((theme) => ({
   content: {
     padding: theme.spacing(3),
-    paddingBottom: "25rem",
-    width: "95%",
+    width: "90%",
   },
   divider: {
     height: ".2rem",
@@ -28,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     boxSizing: "content-box",
-    width: "30rem", // width used to be 30
+    width: "30rem",
     height: "30rem",
     opacity: "0.7",
   },
@@ -59,8 +58,16 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const mediumScreen = useMediaQuery("(max-width: 56.25em)");
+  const smallScreen = useMediaQuery("(max-width: 37.5em)");
+
   return (
-    <div id="about" className={classes.content}>
+    <div
+      id="about"
+      className={classes.content}
+      style={{
+        paddingBottom: smallScreen ? "10rem" : "25rem",
+      }}
+    >
       <div style={{ display: "flex" }}>
         <Typography
           style={{ fontFamily: "Noto Sans TC" }}

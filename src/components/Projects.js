@@ -35,12 +35,11 @@ const useStyles = makeStyles((theme) => ({
 export const Projects = () => {
   const classes = useStyles();
   const smallScreen = useMediaQuery("(max-width: 37.5em)");
-  const mediumScreen = useMediaQuery("(max-width: 56.25em)");
   return (
     <div
       id="projects"
       style={{
-        paddingBottom: "25rem",
+        paddingBottom: smallScreen ? "10rem" : "25rem",
         display: "flex",
         flexDirection: "column",
       }}

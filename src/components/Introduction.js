@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import pink from "@material-ui/core/colors/pink";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+
 const darkerPink = pink[700];
 
 const useStyles = makeStyles((theme) => ({
@@ -18,12 +20,17 @@ const useStyles = makeStyles((theme) => ({
 
 export const Introduction = () => {
   const classes = useStyles();
+  const smallScreen = useMediaQuery("(max-width: 37.5em)");
+
   return (
     <div
-      style={{ paddingTop: "8.5rem", paddingBottom: "25rem" }}
+      style={{
+        paddingTop: "8.5rem",
+        paddingBottom: smallScreen ? "10rem" : "25rem",
+      }}
       className={classes.content}
     >
-      <div className={classes.toolbar} />
+      <div className={classes.toolbar} style={{ minHeight: "2rem" }} />
       <Typography color="primary" variant="overline" display="block">
         Hi, my name is
       </Typography>

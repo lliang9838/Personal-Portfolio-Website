@@ -33,7 +33,7 @@ export const Contact = () => {
     <div
       id="contact"
       style={{
-        paddingBottom: "25rem",
+        paddingBottom: smallScreen ? "10rem" : "25rem",
         alignItems: smallScreen ? "flex-start" : "center",
       }}
       className={classes.content}

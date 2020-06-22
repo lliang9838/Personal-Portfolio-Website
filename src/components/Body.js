@@ -111,7 +111,7 @@ export const Body = () => {
           </Grid>
         </Drawer>
       </div>
-      <main style={{ width: "120rem" }}>
+      <main style={{ width: "100%" }}>
         <Introduction />
         <About />
         <Experience />
