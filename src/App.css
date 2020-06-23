@@ -1,6 +1,6 @@
 html {
   /*TODO: need to update this to 65% as other browsers can have font size of 16 */
-  font-size: 50%; /* 50% of 20px (my browser's font size is 20) = 10px */
+  font-size: 62.5%; /* 50% of 20px (my browser's font size is 20) = 10px */
 }
 @media only screen and (min-width: 112.5em) {
   html {
