@@ -7,6 +7,8 @@ import IconButton from "@material-ui/core/IconButton";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@material-ui/icons/Link";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import blogging from "../img/blogging.png";
+import portfolio from "../img/portfolio.png";
 
 const darkPink = pink[600];
 const darkerPink = pink[700];
@@ -29,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     objectFit: "cover",
     display: "block",
+    border: `.1rem solid ${darkPink}`,
   },
 }));
 
@@ -80,7 +83,7 @@ export const Projects = () => {
           <img
             style={{ borderRadius: "1%", width: smallScreen ? "80%" : "50%" }}
             className={classes.imgStyle}
-            src="https://images.unsplash.com/photo-1583532452513-a02186582ccd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+            src={blogging}
           />
           <div
             style={{
@@ -160,14 +163,14 @@ export const Projects = () => {
             <div style={{ display: "flex" }}>
               <IconButton
                 onClick={() => {
-                  console.log("github");
+                  window.open("https://github.com/lliang9838/Blogging-SPA");
                 }}
               >
                 <GitHubIcon color="primary" />
               </IconButton>
               <IconButton
                 onClick={() => {
-                  console.log("link");
+                  window.open("https://stark-atoll-95378.herokuapp.com/");
                 }}
               >
                 <LinkIcon style={{ fontSize: "3.3rem" }} color="primary" />
@@ -258,14 +261,14 @@ export const Projects = () => {
             <div style={{ display: "flex" }}>
               <IconButton
                 onClick={() => {
-                  console.log("github");
+                  window.open("https://github.com/lliang9838/portfolio");
                 }}
               >
                 <GitHubIcon color="primary" />
               </IconButton>
               <IconButton
                 onClick={() => {
-                  console.log("link");
+                  window.open("https://leslieliang.dev");
                 }}
               >
                 <LinkIcon style={{ fontSize: "3.3rem" }} color="primary" />
@@ -279,7 +282,7 @@ export const Projects = () => {
               marginLeft: smallScreen ? "0rem" : "2rem",
             }}
             className={classes.imgStyle}
-            src="https://images.unsplash.com/photo-1583532452513-a02186582ccd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+            src={portfolio}
           />
         </div>
       </div>

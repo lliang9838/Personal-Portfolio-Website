@@ -8,6 +8,7 @@ import Resume from "../img/resume.pdf";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 import IconButton from "@material-ui/core/IconButton";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
+import logo from "../img/logo.jpeg";
 
 import "./Header.css";
 
@@ -29,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+  },
+  logo: {
+    height: "2rem",
   },
 }));
 
@@ -57,6 +61,9 @@ export const Header = () => {
       >
         <Toolbar>
           <div className="navbar">
+            <a href="#" className="nav-link" style={{ marginRight: "auto" }}>
+              <img className={classes.logo} src={logo} alt="logo" />
+            </a>
             <a
               href="#about"
               className="nav-link"
