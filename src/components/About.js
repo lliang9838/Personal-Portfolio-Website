@@ -103,9 +103,9 @@ export const About = () => {
             both the traditional tech stack (Linux, Apache Tomcat, MySQL, PHP)
             and the modern tech stack (Angular, Express, Node, MongoDB), I found
             myself enamored with the web ecosystem. On one side, I could create
-            aesthetic features to attract users to the website (front-end) and
-            on the other, I could write efficient algorithms to process and
-            manipulate our data (backend-end).
+            aesthetic features to attract users to the website (frontend) and on
+            the other, I could write efficient algorithms to process and
+            manipulate our data (backend).
             <br />
             <br />I graduated in June 2019 with a Bachelor of Science in
             Computer Science from{" "}
