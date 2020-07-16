@@ -9,6 +9,7 @@ import LinkIcon from "@material-ui/icons/Link";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import blogging from "../img/blogging.png";
 import portfolio from "../img/portfolio.png";
+import restaurant from "../img/restaurant.png";
 
 const darkPink = pink[600];
 const darkerPink = pink[700];
@@ -32,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
     objectFit: "cover",
     display: "block",
     border: `.1rem solid ${darkPink}`,
+  },
+  robotoBold: {
+    fontWeight: 700,
   },
 }));
 
@@ -163,7 +167,9 @@ export const Projects = () => {
             <div style={{ display: "flex" }}>
               <IconButton
                 onClick={() => {
-                  window.open("https://github.com/lliang9838/Blogging-SPA");
+                  window.open(
+                    "https://github.com/lliang9838/Blogging-Web-App-Frontend"
+                  );
                 }}
               >
                 <GitHubIcon color="primary" />
@@ -261,7 +267,9 @@ export const Projects = () => {
             <div style={{ display: "flex" }}>
               <IconButton
                 onClick={() => {
-                  window.open("https://github.com/lliang9838/portfolio");
+                  window.open(
+                    "https://github.com/lliang9838/Personal-Portfolio-Website"
+                  );
                 }}
               >
                 <GitHubIcon color="primary" />
@@ -284,6 +292,109 @@ export const Projects = () => {
             className={classes.imgStyle}
             src={portfolio}
           />
+        </div>
+      </div>
+      {/* THIRD PROJECT, RESTAURANT WEB PAGE */}
+      <div
+        className={classes.root}
+        style={{ marginTop: "2rem", height: "100%" }}
+      >
+        <div
+          style={{
+            height: "100%",
+            display: "flex",
+            flexDirection: smallScreen ? "column" : "row",
+          }}
+        >
+          <img
+            style={{ borderRadius: "1%", width: smallScreen ? "80%" : "50%" }}
+            className={classes.imgStyle}
+            src={restaurant}
+          />
+          <div
+            style={{
+              marginLeft: smallScreen ? "0rem" : "2rem",
+              marginTop: smallScreen ? "2rem" : "0rem",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-end",
+              width: smallScreen ? "80%" : "50%",
+            }}
+          >
+            <Typography
+              variant="h4"
+              color="secondary"
+              style={{ fontWeight: 700 }}
+            >
+              Restaurant Website
+            </Typography>
+            <Typography
+              style={{ marginTop: "1em" }}
+              color="primary"
+              variant="body1"
+            >
+              An interactive and dynamic restaurant web page created using
+              Vanilla JavaScript, HTML and CSS. I listened to events using{" "}
+              <span className={classes.robotoBold}>addEventListener</span> and
+              used DOM Manipulations to dynamically update our web page when the
+              user clicked on certain areas of the website.
+            </Typography>
+            <div
+              style={{
+                marginTop: "1rem",
+                display: "flex",
+                width: "95%",
+                justifyContent: "space-evenly",
+              }}
+            >
+              <Typography
+                style={{ color: `${darkerPink}` }}
+                variant="subtitle1"
+              >
+                JavaScript
+              </Typography>
+              <Typography
+                style={{ color: `${darkerPink}` }}
+                variant="subtitle1"
+              >
+                DOM Manipulations
+              </Typography>
+              <Typography
+                style={{ color: `${darkerPink}` }}
+                variant="subtitle1"
+              >
+                HTML
+              </Typography>
+              <Typography
+                style={{ color: `${darkerPink}` }}
+                variant="subtitle1"
+              >
+                CSS
+              </Typography>
+              <Typography
+                style={{ color: `${darkerPink}` }}
+                variant="subtitle1"
+              >
+                Flexbox
+              </Typography>
+            </div>
+            <div style={{ display: "flex" }}>
+              <IconButton
+                onClick={() => {
+                  window.open("https://github.com/lliang9838/Restaurant-Page");
+                }}
+              >
+                <GitHubIcon color="primary" />
+              </IconButton>
+              <IconButton
+                onClick={() => {
+                  window.open("https://restaurant-dom.web.app/");
+                }}
+              >
+                <LinkIcon style={{ fontSize: "3.3rem" }} color="primary" />
+              </IconButton>
+            </div>
+          </div>
         </div>
       </div>
     </div>

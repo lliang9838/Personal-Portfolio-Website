@@ -4,7 +4,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import Resume from "../img/resume.pdf";
+// import Resume from "../../public/resume.pdf";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 import IconButton from "@material-ui/core/IconButton";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
@@ -92,7 +92,11 @@ export const Header = () => {
             >
               <Typography color="primary">Contact Me</Typography>
             </a>
-            <a href={Resume} className="nav-link" target="_blank">
+            <a
+              href={process.env.PUBLIC_URL + "/resume.pdf"}
+              className="nav-link"
+              target="_blank"
+            >
               <Typography color="primary">Resume</Typography>
             </a>
           </div>
@@ -140,7 +144,11 @@ export const Header = () => {
                 >
                   <Typography color="primary">Contact Me</Typography>
                 </a>
-                <a href={Resume} className="nav-link" target="_blank">
+                <a
+                  href={process.env.PUBLIC_URL + "/resume.pdf"}
+                  className="nav-link"
+                  target="_blank"
+                >
                   <Typography color="primary">Resume</Typography>
                 </a>
               </div>

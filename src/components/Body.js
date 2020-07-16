@@ -68,7 +68,6 @@ export const Body = () => {
             direction="column"
             justify="flex-end"
             alignItems="center"
-            // spacing={3}
           >
             <Grid item style={{ marginBottom: "1.2rem", marginTop: "1.2rem" }}>
               <a href="https://github.com/lliang9838" target="_blank">
