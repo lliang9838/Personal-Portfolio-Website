@@ -22,14 +22,9 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import "./Experience.css";
 
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
 const darkestPink = pink[800];
-const darkerPink = pink[700];
 const darkPink = pink[600];
 
 const useStyles = makeStyles((theme) => ({

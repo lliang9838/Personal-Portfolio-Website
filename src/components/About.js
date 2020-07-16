@@ -292,6 +292,7 @@ export const About = () => {
           <a
             style={{ textDecoration: "none" }}
             href="https://github.com/lliang9838"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <img className={classes.avatar} src={Avatar} alt="avatar" />

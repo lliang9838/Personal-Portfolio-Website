@@ -61,7 +61,7 @@ export const Header = () => {
       >
         <Toolbar>
           <div className="navbar">
-            <a href="#" className="nav-link" style={{ marginRight: "auto" }}>
+            <a href="/" className="nav-link" style={{ marginRight: "auto" }}>
               <img className={classes.logo} src={logo} alt="logo" />
             </a>
             <a
@@ -95,6 +95,7 @@ export const Header = () => {
             <a
               href={process.env.PUBLIC_URL + "/resume.pdf"}
               className="nav-link"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <Typography color="primary">Resume</Typography>
@@ -147,6 +148,7 @@ export const Header = () => {
                 <a
                   href={process.env.PUBLIC_URL + "/resume.pdf"}
                   className="nav-link"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   <Typography color="primary">Resume</Typography>

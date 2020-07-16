@@ -64,6 +64,7 @@ export const Introduction = () => {
         style={{ textDecoration: "none" }}
         href="https://www.linkedin.com/in/leslieliang9838/"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <Button
           style={{ marginTop: "5rem" }}

@@ -6,7 +6,6 @@ import pink from "@material-ui/core/colors/pink";
 import Divider from "@material-ui/core/Divider";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
-const darkerPink = pink[700];
 const darkestPink = pink[800];
 
 const useStyles = makeStyles((theme) => ({
@@ -80,6 +79,7 @@ export const Contact = () => {
         style={{ textDecoration: "none" }}
         href="https://www.linkedin.com/in/leslieliang9838/"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <Button
           style={{ marginTop: "5rem" }}

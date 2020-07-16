@@ -5,7 +5,6 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Drawer from "@material-ui/core/Drawer";
-import Button from "@material-ui/core/Button";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import FacebookIcon from "@material-ui/icons/Facebook";
@@ -20,7 +19,6 @@ import { Contact } from "./Contact";
 import "./Body.css";
 
 const darkPink = pink[600];
-const darkerPink = pink[700];
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -70,7 +68,11 @@ export const Body = () => {
             alignItems="center"
           >
             <Grid item style={{ marginBottom: "1.2rem", marginTop: "1.2rem" }}>
-              <a href="https://github.com/lliang9838" target="_blank">
+              <a
+                href="https://github.com/lliang9838"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <GitHubIcon color="primary" />
               </a>
             </Grid>
@@ -78,6 +80,7 @@ export const Body = () => {
               <a
                 href="https://www.linkedin.com/in/leslieliang9838/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <LinkedInIcon color="primary" />
               </a>
@@ -86,6 +89,7 @@ export const Body = () => {
               <a
                 href="https://www.facebook.com/bigballerleslie/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FacebookIcon color="primary" />
               </a>
@@ -94,6 +98,7 @@ export const Body = () => {
               <a
                 href="https://www.instagram.com/bigballerleslie/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <InstagramIcon color="primary" />
               </a>

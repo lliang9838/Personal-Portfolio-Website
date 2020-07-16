@@ -85,6 +85,7 @@ export const Projects = () => {
           }}
         >
           <img
+            alt="blogging web app"
             style={{ borderRadius: "1%", width: smallScreen ? "80%" : "50%" }}
             className={classes.imgStyle}
             src={blogging}
@@ -284,6 +285,7 @@ export const Projects = () => {
             </div>
           </div>
           <img
+            alt="portfolio website"
             style={{
               borderRadius: "1%",
               width: smallScreen ? "80%" : "50%",
@@ -307,6 +309,7 @@ export const Projects = () => {
           }}
         >
           <img
+            alt="restaurant web page"
             style={{ borderRadius: "1%", width: smallScreen ? "80%" : "50%" }}
             className={classes.imgStyle}
             src={restaurant}
